@@ -11,12 +11,12 @@ class IngredientsCardList extends StatelessWidget {
   final Duration slidingDuration;
   final AnimationController ingredientController;
   const IngredientsCardList({
-    Key? key,
+    super.key,
     required this.recipe,
     required this.delayTime,
     required this.slidingDuration,
     required this.ingredientController,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

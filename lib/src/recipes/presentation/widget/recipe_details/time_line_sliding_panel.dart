@@ -9,11 +9,11 @@ class TimeLineSlidingPanel extends StatefulWidget {
   final Widget body;
   final BoxConstraints constraints;
   const TimeLineSlidingPanel({
-    Key? key,
+    super.key,
     required this.recipe,
     required this.body,
     required this.constraints,
-  }) : super(key: key);
+  });
 
   @override
   State<TimeLineSlidingPanel> createState() => _TimeLineSlidingPanelState();

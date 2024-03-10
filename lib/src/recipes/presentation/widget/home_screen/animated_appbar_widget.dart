@@ -15,12 +15,12 @@ class AnimatedAppBarWidget extends StatelessWidget {
   final Duration namePlayDuration;
 
   const AnimatedAppBarWidget({
-    Key? key,
+    super.key,
     required this.avatarWaitingDuration,
     required this.avatarPlayDuration,
     required this.nameDelayDuration,
     required this.namePlayDuration,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

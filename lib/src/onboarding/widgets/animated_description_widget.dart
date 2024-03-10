@@ -7,10 +7,10 @@ class AnimatedDescriptionWidget extends StatelessWidget {
   final Duration descriptionPlayDuration;
   final Duration descriptionDelayDuration;
   const AnimatedDescriptionWidget({
-    Key? key,
+    super.key,
     required this.descriptionPlayDuration,
     required this.descriptionDelayDuration,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

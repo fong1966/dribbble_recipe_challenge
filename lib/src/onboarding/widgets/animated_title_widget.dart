@@ -9,10 +9,10 @@ class AnimatedTitleWidget extends StatelessWidget {
   final Duration mainPlayDuration;
 
   const AnimatedTitleWidget({
-    Key? key,
+    super.key,
     required this.titleDelayDuration,
     required this.mainPlayDuration,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

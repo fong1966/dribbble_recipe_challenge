@@ -7,10 +7,10 @@ class AnimatedCategoryList extends StatelessWidget {
   final Duration categoryListPlayDuration;
   final Duration categoryListDelayDuration;
   const AnimatedCategoryList({
-    Key? key,
+    super.key,
     required this.categoryListPlayDuration,
     required this.categoryListDelayDuration,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

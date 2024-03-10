@@ -9,10 +9,10 @@ class TimeLineWidget extends StatefulWidget {
   final List<String> steps;
   List<bool> isCheckedList;
   TimeLineWidget({
-    Key? key,
+    super.key,
     required this.steps,
     required this.isCheckedList,
-  }) : super(key: key);
+  });
 
   @override
   State<TimeLineWidget> createState() => _TimeLineWidgetState();
@@ -44,11 +44,11 @@ class CustomTimeLineWidget extends StatelessWidget {
   final int index;
   final List<String> steps;
   const CustomTimeLineWidget({
-    Key? key,
+    super.key,
     required this.isCheckedList,
     required this.index,
     required this.steps,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -7,11 +7,11 @@ class AnimatedDishWidget extends StatelessWidget {
   final String imageUrl;
   final Duration dishPlayTime;
   const AnimatedDishWidget({
-    Key? key,
+    super.key,
     required this.constraints,
     required this.imageUrl,
     required this.dishPlayTime,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

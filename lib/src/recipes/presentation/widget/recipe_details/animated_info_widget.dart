@@ -8,12 +8,12 @@ class AnimatedInfoWidget extends StatelessWidget {
   final Duration infoPlayTime;
   final BoxConstraints constraints;
   const AnimatedInfoWidget({
-    Key? key,
+    super.key,
     required this.nutrition,
     required this.infoDelayTime,
     required this.infoPlayTime,
     required this.constraints,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -43,10 +43,9 @@ class _InfoViewer extends StatelessWidget {
   final String name;
   final num amount;
   const _InfoViewer({
-    Key? key,
     required this.name,
     required this.amount,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

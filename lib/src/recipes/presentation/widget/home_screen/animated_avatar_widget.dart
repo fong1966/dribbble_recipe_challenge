@@ -7,10 +7,10 @@ class AnimatedAvatarWidget extends StatelessWidget {
   final Duration avatarPlayDuration;
   final Duration avatarWaitingDuration;
   const AnimatedAvatarWidget({
-    Key? key,
+    super.key,
     required this.avatarPlayDuration,
     required this.avatarWaitingDuration,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

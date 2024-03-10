@@ -6,9 +6,9 @@ import 'package:flutter_animate/flutter_animate.dart';
 class LoadedRecipesWidget extends StatelessWidget {
   final List<Recipe> recipes;
   const LoadedRecipesWidget({
-    Key? key,
+    super.key,
     required this.recipes,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

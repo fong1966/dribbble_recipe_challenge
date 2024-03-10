@@ -7,9 +7,9 @@ import 'package:dribbble_challenge/src/recipes/domain/recipe.dart';
 class RecipeCardWidget extends StatelessWidget {
   final Recipe recipe;
   const RecipeCardWidget({
-    Key? key,
+    super.key,
     required this.recipe,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -48,10 +48,9 @@ class _AnimatedNutritionText extends StatelessWidget {
   final Duration playDuration;
   final Map<String, dynamic> nutrition;
   const _AnimatedNutritionText({
-    Key? key,
     required this.playDuration,
     required this.nutrition,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -76,10 +75,9 @@ class _AnimatedImageWidget extends StatelessWidget {
   final Duration playDuration;
   final String imageUrl;
   const _AnimatedImageWidget({
-    Key? key,
     required this.playDuration,
     required this.imageUrl,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -100,10 +98,9 @@ class _AnimatedNameWidget extends StatelessWidget {
   final Duration playDuration;
   final String name;
   const _AnimatedNameWidget({
-    Key? key,
     required this.playDuration,
     required this.name,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -128,10 +125,9 @@ class _AnimatedDescriptionWidget extends StatelessWidget {
   final Duration playDuration;
   final String description;
   const _AnimatedDescriptionWidget({
-    Key? key,
     required this.playDuration,
     required this.description,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

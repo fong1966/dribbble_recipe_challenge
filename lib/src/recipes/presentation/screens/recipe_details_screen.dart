@@ -8,9 +8,9 @@ import 'package:flutter_animate/flutter_animate.dart';
 class RecipeDetailsScreen extends StatelessWidget {
   final Recipe recipe;
   const RecipeDetailsScreen({
-    Key? key,
+    super.key,
     required this.recipe,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -8,10 +8,10 @@ class AnimatedDishWidget extends StatelessWidget {
   final Duration dishPlayDuration;
   final Duration leavesDelayDuration;
   const AnimatedDishWidget({
-    Key? key,
+    super.key,
     required this.dishPlayDuration,
     required this.leavesDelayDuration,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

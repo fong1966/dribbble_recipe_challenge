@@ -6,10 +6,10 @@ class AnimatedSelectedCategoryWidget extends StatelessWidget {
   final Duration selectedCategoryPlayDuration;
   final Duration selectedCategoryDelayDuration;
   const AnimatedSelectedCategoryWidget({
-    Key? key,
+    super.key,
     required this.selectedCategoryPlayDuration,
     required this.selectedCategoryDelayDuration,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
